@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }}  {% endblock %}
+{% block css %}
+    {{  super() }}
+    <link  href="{{url_for('home.static', filename='css/home.css')}}" rel="stylesheet">
+{% endblock %}
+{% block js %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+	<!-- grey area -->
+	<div class="grey-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 offset-lg-0 text-center">
+					<div class="grey-text">
+						<div class="grey-text-tablecell"><br><br>
+							<p class="subtitle">BISS OF BLISS</p>
+							<h1>Straight From The Oven</h1>
+							<div class="grey-btns">
+								<a href="/menu" class="boxed-btn">Pastry Collection</a>
+								<a href="/contact_us" class="bordered-btn">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end grey area -->
+
+
+	<!-- product section -->
+	<div class="mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1 offset-lg text-center">
+					<div class="section-title">
+						<h3><span class="orange-text">Our</span> Products</h3>
+						<p>Check out our new cheese cakes.</p><br>
+						<p>Made of a 100% Natural, no food coloring ingredients.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-lg-4 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<img src="/static/img/products/cheesecake1.jpg" alt="">
+						</div>
+						<h3>Raspberries Cheese Cake</h3>
+						<p class="product-price"><span>1/pcs</span> 15$ </p>
+						<a href="" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<img src="/static/img/products/cheesecake4.jpg" alt="">
+						</div>
+						<h3>Blue Berries Cheese Cake</h3>
+						<p class="product-price"><span>1/pcs</span> 18$ </p>
+						<a href="" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<img src="/static/img/products/cheesecake2.jpg" alt="">
+						</div>
+						<h3>Passion Fruit Cheese Cake</h3>
+						<p class="product-price"><span>1/pcs</span> 18$ </p>
+						<a href="" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end product section -->
+
+
+	<!-- events -->
+	<div class="pt-150 pb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1 offset-lg text-center">
+					<div class="section-title">
+						<h3><span class="orange-text">Our</span> Events</h3>
+						<p>You think you handle that much flavors?</p><br>
+						<p>Check out the Chocolate Events from last week.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 ">
+					<div class="eventCard">
+						<div class="event-bg event-bg-1">
+                        </div>
+						<div class="event-text-box">
+							<h3><a href="">You Won't Be Able To Take Your Eyes Off</a></h3>
+							<p class="excerpt">The chocolate workshop is a great activity for kids and adults, and is suitable for all ages.</p>
+							<a href="/events" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 ">
+					<div class="eventCard">
+						<div class="event-bg event-bg-2"></div>
+						<div class="event-text-box">
+							<h3><a href="">Company Events From Last Month</a></h3>
+							<p class="excerpt">We're bringing the bakery to you, you can get your cakes and chocolates at the company office.</p>
+							<a href="Events.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 ">
+					<div class="eventCard">
+						<div class="event-bg event-bg-3"></div>
+						<div class="event-text-box">
+							<h3><a href="">Fill the Waffle Events</a><br><br></h3>
+							<p class="excerpt">Our classic workshop runs almost every day in the year! It lasts about 90 minutes.</p>
+							<a href="Events.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 text-center">
+					<a href="Menu.html" class="boxed-btn">More Products</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of events -->
+
+{% endblock %}

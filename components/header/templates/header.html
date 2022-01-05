@@ -1,0 +1,40 @@
+<!-- header -->
+<div class="top-header-area" id="sticker">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 text-center">
+				<!-- logo -->
+				<div class="site-logo">
+					<a href="/">
+						<img src="/static/img/logo3.png" alt="" >
+					</a>
+				</div>
+				<!-- logo -->
+
+				<!-- menu start -->
+				<nav class="main-menu">
+					<ul>
+						<li {% if request.path =='/' %} class="current-list-item" {% endif %}><a href="/"><i class="fas fa-home"></i></a>
+						</li>
+						<li {% if request.path =='/about' %} class="current-list-item" {% endif %}><a href="/about">Our Story</a></li>
+						<li {% if request.path =='/events' %} class="current-list-item" {% endif %}><a href="/events">Events</a>
+						</li>
+						<li {% if request.path =='/menu' %} class="current-list-item" {% endif %}><a href="/menu">Menu</a>
+						</li>
+						<li{% if request.path =='/contact_us' %} class="current-list-item" {% endif %}><a href="/contact_us">Contact</a></li>
+						<li>
+							<div class="header-icons">
+								<a {% if request.path =='/cart' %}class="current-list-item" {% endif %} href="/cart"><i class="fas fa-shopping-cart"></i></a>
+								<!-- need to put in the mobile as well!!!!  -->
+
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<a class="mobile-show person-bar-icon" onclick="open_login();return false;"><i class="fas fa-male" ></i></a>
+				<div class="mobile-menu"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end header -->

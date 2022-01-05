@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }}  {% endblock %}
+{% block js %}
+    {{ super() }}
+{% endblock %}
+{% block css %}
+    {{ super() }}
+        <link  href="{{url_for('contact_us.static', filename='css/contactUs.css')}}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<!-- grey area -->
+	<div class="grey-area grey-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 offset-lg-0 text-center">
+					<div class="grey-text">
+						<div class="grey-text-tablecell">
+							<h1 class="contactUsTitle">Contact Us</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end grey area -->
+
+	<!-- Contact us form section -->
+	<div class="mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1 offset-lg text-center">
+					<div class="formContainer">
+						<div class="reachingOut">Thank you for reaching out!</div>
+						<p>Want to tell us something? We would love to hear from you :)</p>
+						<form class="myFormClass"  action="home.html">
+									<div class="formRow">
+										<label class="firstElement" for="fname">First Name</label>
+										<input required class="secondElement" type="text" id="fname" name="firstname" placeholder="Your name.." pattern="[A-Za-z]{1,32}">
+									</div>
+									<div class="formRow">
+										<label class="firstElement" for="lname">Last Name</label>
+										<input required class="secondElement" type="text" id="lname" name="lastname" placeholder="Last name" pattern="[A-Za-z]{1,32}">
+									</div>
+									<div class="formRow">
+										<label class="firstElement" for="email">Email address</label>
+										<input required class="secondElement" type="email" id="email" name="email" placeholder="Email Address">
+									</div>
+									<div class="formRow">
+										<label class="firstElement" for="subject">Message</label>
+										<textarea required class="secondElement" id="subject" name="subject" placeholder="Write something.." ></textarea>
+									</div>
+									<input style="margin-top: 28px;" type="submit" value="Submit">
+								</form>
+						<div class="branches">
+							<a href="https://www.google.co.il/maps/@31.2525702,34.8035112,13.92z"><img src="/static/img/ContactUs/branches.png" alt="Avi Taami photo with branches"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Story section -->
+
+{% endblock %}
+
+

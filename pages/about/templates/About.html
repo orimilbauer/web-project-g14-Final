@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }}  {% endblock %}
+{% block js %}
+    {{ super() }}
+{% endblock %}
+{% block css %}
+    {{ super() }}
+        <link  href="{{url_for('about.static', filename='css/about.css')}}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<!-- grey area -->
+	<div class="grey-area grey-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 offset-lg-0 text-center">
+					<div class="grey-text">
+						<div class="grey-text-tablecell">
+							<p class="subtitle">BISS OF BLISS</p>
+							<h1>Our Beautiful Story</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end grey area -->
+
+
+	<!-- Story section -->
+	<div class="mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1 offset-lg text-center">
+					<div class="section-title">
+						<h3><span class="orange-text">M</span>atamim</h3>
+						<p>Our bakery has been around for over 30 years, and since then it has been
+                        combining excellent raw materials with dedicated and talented people!<p><br>
+                        <p>Matamim bakery was established in Be'er Sheva by Avi Taami.
+                        From a satisfied customer to another, the company has grown,
+                        expanded and even established 2 more branches in Be'er Sheva.</p><br>
+                        <p>We will be happy to give you service both in our bakeries, at a variety of events and through the website!</p><br>
+                    </div>
+                    <div class="about-main-image">
+                        <img src="/static/img/About/About pic.jpg" alt="Avi Taami photo with Cake">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Story section -->
+
+
+{% endblock %}
